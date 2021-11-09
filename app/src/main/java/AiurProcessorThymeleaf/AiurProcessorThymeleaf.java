@@ -38,8 +38,8 @@ public class AiurProcessorThymeleaf {
 
         TemplateEngine templateEngine = new TemplateEngine();
         templateEngine.addTemplateResolver(templateResolver);
-        // templateEngine.setDialect(new LayoutDialect());
-        templateEngine.addDialect(new LayoutDialect());
+        templateEngine.setDialect(new LayoutDialect());
+        // templateEngine.addDialect(new LayoutDialect());
 
         return templateEngine;
     }
