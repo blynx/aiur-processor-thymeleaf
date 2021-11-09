@@ -11,7 +11,7 @@ function quote(string) {
 
 module.exports = (templateFilePath, data, config) => {
   let { prefix = process.env.PWD } = config;
-  let jarfile = path.resolve(__dirname, "../../../bundle/aiur-processor-thymeleaf-all.jar");
+  let jarfile = path.resolve(__dirname, "bundle/aiur-processor-thymeleaf-all.jar");
 
   let command = ["java -jar " + jarfile];
   command.push("--prefix " + quote(prefix));
